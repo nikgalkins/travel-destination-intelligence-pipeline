@@ -1,0 +1,4 @@
+name: travel_destination_intelligence_pipeline
+
+default_connections:
+  duckdb: "duckdb-default"

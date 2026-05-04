@@ -1,0 +1,11 @@
+destination_id,destination_name,country,latitude,longitude,primary_trip_type
+antalya,Antalya,Turkey,36.8969,30.7133,beach
+tbilisi,Tbilisi,Georgia,41.7151,44.8271,city
+batumi,Batumi,Georgia,41.6168,41.6367,beach
+cappadocia,Cappadocia / Goreme,Turkey,38.6431,34.8289,hiking
+athens,Athens,Greece,37.9838,23.7275,city
+rome,Rome,Italy,41.9028,12.4964,city
+barcelona,Barcelona,Spain,41.3874,2.1686,beach
+lisbon,Lisbon,Portugal,38.7223,-9.1393,city
+tenerife,Tenerife,Spain,28.4636,-16.2518,beach
+dubai,Dubai,UAE,25.2048,55.2708,beach

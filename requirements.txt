@@ -1,0 +1,5 @@
+bruin-sdk[duckdb]
+duckdb
+pandas
+requests
+streamlit
