@@ -2,6 +2,10 @@
 
 A compact end-to-end data engineering project that ranks travel destinations from an Istanbul origin point.
 
+**Stack:** Python · DuckDB · SQL · Bruin · pandas · Streamlit  
+**Data:** Open-Meteo, OurAirports, OpenStreetMap (Overpass) — open data only  
+**Status:** educational MVP (Data Engineering Zoomcamp 2026), not a production system
+
 The project answers a practical travel-planning question:
 
 > If a user starts in Istanbul, which destinations look best for a beach trip, outdoor/hiking trip, or city break based on accessibility, weather, activities, and accommodation density?
@@ -156,6 +160,13 @@ Combines destination activity, forecast weather, and airport accessibility into 
 - `city_break_score`
 - `final_score`
 
+## Data quality checks
+
+Bruin column and custom checks run with the pipeline:
+
+- `stg_destination_activity`: `destination_id` is not null and unique; `activity_total_count` is not null.
+- `mart_destination_scores`: `destination_id` is not null and unique; `final_score` is not null and positive; the mart returns at least five destinations.
+
 ## Dashboard
 
 The Streamlit dashboard contains:
@@ -191,6 +202,10 @@ Examples:
 - Add user preference weights.
 - Add cloud deployment and scheduled pipeline runs.
 - Replace heuristic scoring with a trained ranking model.
+
+## Development note
+
+Built with AI-assisted coding tools. Pipeline logic, SQL, scoring weights and outputs were reviewed and checked manually before submission.
 
 ## Project status
 
